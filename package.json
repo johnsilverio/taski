@@ -1,0 +1,29 @@
+{
+  "name": "taski",
+  "version": "0.0.1",
+  "description": "A minimal, modern, and intuitive task manager that helps you stay organized every day.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch -o ./build",
+    "build": "webpack --mode production --entry ./src/js/app.js -o ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsilverio/taski.git"
+  },
+  "author": "John Silverio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnsilverio/taski/issues"
+  },
+  "homepage": "https://github.com/johnsilverio/taski#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/plugin-transform-runtime": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "eslint": "^9.39.0",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
