@@ -9,6 +9,7 @@ export default [
         console: 'readonly'
       }
     },
+    extends: ['eslint:recommended'],
     rules: {
       'semi': ['error', 'always'],
       'quotes': ['error', 'single'],
