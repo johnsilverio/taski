@@ -1,0 +1,19 @@
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.info {
+  display: flex;
+  gap: 8px;
+}
+
+.infoCount {
+  background: var(--color-primary-dark);
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: .875rem;
+  font-weight: var(--font-weight-bold);
+}

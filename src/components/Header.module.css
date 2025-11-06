@@ -1,0 +1,15 @@
+.headerContainer {
+  background: var(--bg-tertiary);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.headerLogo {
+  width: 200px;
+  height: auto;
+}
