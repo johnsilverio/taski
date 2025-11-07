@@ -1,0 +1,43 @@
+.card {
+  background: var(--bg-tertiary);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  color: var(--text-primary);
+
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  margin-bottom: .75rem;
+}
+
+.checkContainer,
+.trashContainer {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.20456rem;
+  cursor: pointer;
+}
+
+.check {
+  stroke: var(--border-color);
+  transition: stroke 0.2s ease;
+}
+
+.checkContainer:hover .check {
+  stroke: var(--color-primary);
+}
+
+
+.trash:hover {
+  transition: color 0.2s ease;
+  color: var(--color-danger);
+}
+
+.checkedTask {
+  text-decoration: line-through;
+  opacity: 50%;
+  transition: opacity 0.2s ease text-decoration 0.2s ease;
+}

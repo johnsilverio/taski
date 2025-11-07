@@ -1,3 +1,4 @@
+import { TaskItem } from "./TaskItem";
 import styles from "./TasksList.module.css";
 
 export function TaskList() {
@@ -14,7 +15,18 @@ export function TaskList() {
 				</div>
 			</header>
 
-			<div>Empty Mode</div>
+			<div>
+				<div className={styles.emptyModeContainer}>
+					<img
+						className={styles.emptyModeImg}
+						src="./src/assets/empty-task.svg"
+						alt="Empty Task"
+					/>
+					<p>You don't have any tasks registered yet</p>
+					<p>Create tasks and organize your to-do items.</p>
+				</div>
+				<TaskItem />
+			</div>
 		</>
 	);
 }
