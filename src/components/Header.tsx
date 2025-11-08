@@ -1,7 +1,11 @@
 import styles from "./Header.module.css";
 import { TaskInput } from "./TaskInput";
 
-export function Header() {
+interface HeaderProps {
+	createTask: (taskContent: string) => void;
+}
+
+export function Header({ createTask }: HeaderProps) {
 	return (
 		<div className={styles.headerContainer}>
 			<img
@@ -9,7 +13,7 @@ export function Header() {
 				src="./src/assets/taski-dark-logo.svg"
 				alt="Taski Dark Logo"
 			/>
-			<TaskInput />
+			<TaskInput createTask={createTask} />
 		</div>
 	);
 }
