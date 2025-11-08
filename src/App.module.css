@@ -6,3 +6,13 @@
   flex-direction: column;
   margin-top: 76px;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
